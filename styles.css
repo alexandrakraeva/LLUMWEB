@@ -1,0 +1,38 @@
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+}
+
+#playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Makes the button a circle */
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #playButton:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 20px solid black; /* Size of the triangle */
+        border-t
